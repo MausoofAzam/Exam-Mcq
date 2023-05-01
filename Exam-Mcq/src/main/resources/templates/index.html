@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+</head>
+<body>
+<h1>Welcome to the MCQ Exam Portal!</h1>
+<form th:action="@{/mcq}">
+  <label for="level">Level:</label>
+  <select id="level" name="level">
+    <option value="beginner">Beginner</option>
+    <option value="intermediate">Intermediate</option>
+    <option value="advanced">Advanced</option>
+  </select>
+  <label for="category">Category:</label>
+  <select id="category" name="category">
+    <option value="java">Java</option>
+    <option value=".net">.NET</option>
+    <option value="testing">Testing</option>
+  </select>
+  <button type="submit">Start Exam</button>
+</form>
+</body>
+</html>
