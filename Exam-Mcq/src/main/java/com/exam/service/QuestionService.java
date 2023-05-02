@@ -32,6 +32,20 @@ public class QuestionService {
         // Save the question to the database
         questionRepository.save(question);
     }
+    /*@Transactional
+    public Question saveQuestionWithOptions(Question question, List<Option> options) {
+        // First, save the question to get its generated ID
+        questionRepository.save(question);
+
+        // Then, set the question ID for each option and save them
+        for (Option option : options) {
+            option.setQuestion(question);
+            optionRepository.save(option);
+        }
+
+        // Finally, return the saved question object
+        return question;
+    }*/
 
     public List<Question> getQuestionsByCategoryAndLevel(String category, String level) {
         List<Question> questions = questionRepository.findByCategoryAndLevel(category, level);

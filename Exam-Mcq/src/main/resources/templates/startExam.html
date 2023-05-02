@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Start Exam</title>
+</head>
+<body>
+<h1>Start Exam</h1>
+<form action="#" th:action="@{/mcq/startExam}" method="get">
+  <div>
+    <label for="category">Category:</label>
+    <select id="category" name="category">
+      <option value="java">Java</option>
+      <option value=".net">.Net</option>
+      <option value="testing">Testing</option>
+    </select>
+  </div>
+  <div>
+    <label for="level">Level:</label>
+    <select id="level" name="level">
+      <option value="beginner">Beginner</option>
+      <option value="intermediate">Intermediate</option>
+      <option value="advanced">Advanced</option>
+    </select>
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+</form>
+</body>
+</html>
