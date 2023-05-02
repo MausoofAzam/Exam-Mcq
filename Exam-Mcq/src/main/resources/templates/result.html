@@ -2,12 +2,13 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>MCQ Exam Result</title>
+  <title>Exam Results</title>
 </head>
 <body>
-<h1>MCQ Exam Result</h1>
-<p>Your total marks is <span th:text="${totalMarks}"></span></p>
-<a href="/mcq/startExam">Start Again</a>
+<h1>Exam Results</h1>
+<p>Score: <span th:text="${score}"></span></p>
+<p>Total Questions: <span th:text="${totalQuestions}"></span></p>
+<p>Correct Answers: <span th:text="${correctAnswers}"></span></p>
+<p>Incorrect Answers: <span th:text="${incorrectAnswers}"></span></p>
 </body>
 </html>
-
